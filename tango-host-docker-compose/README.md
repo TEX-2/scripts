@@ -8,3 +8,8 @@ tango-host.sh start
 
 ### Stop:
 tango-host.sh stop
+
+### Install:
+./setup.sh install 
+
+При инсталяции создаётся демон в systemd добовляемый в автозагрузку
