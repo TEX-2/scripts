@@ -5,18 +5,7 @@ SYSTEMD_PATH_FILE=/etc/systemd/system/tango-host.service
 
 SRC_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 
-SYSTEMD_FILE_CONTENT="[Unit]\n
-Description=tango-host service\n
-After=docker.service\n
-\n
-[Service]\n
-Type=simple\n
-ExecStart=${INSTALL_PATH}/tango-host.sh start\n
-
-\n
-[Install]\n
-WantedBy=multi-user.target\n
-"
+SYSTEMD_FILE_CONTENT="[Unit]\nDescription=tango-host service\nAfter=docker.service\n\n[Service]\nType=simple\nExecStart=${INSTALL_PATH}/tango-host.sh start\n\n[Install]\nWantedBy=multi-user.target\n"
 
 function test_root(){
     UserID=`id -u`
