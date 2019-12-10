@@ -1,7 +1,7 @@
 #!/bin/bash
 
 REPOSITORY="pshcyrill"
-TAG="test"
+TAG="latest"
 DIRS="nicos nicos-cache nicos-daemon nicos-elog nicos-poller nicos-watchdog"
 
 for dir in $DIRS
