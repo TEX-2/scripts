@@ -18,13 +18,13 @@
 # 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 #
 # Module authors:
-#   Georg Brandl <g.brandl@fz-juelich.de>
+#   Kiril Pshenichnyi <pshcyrill@mail.ru>
 #
 # *****************************************************************************
 
-"""NICOS package for demonstration setups/modules."""
+"""Template for TEX-2 setup from demo NICOS skeleteon"""
 
 
 def determine_instrument(setup_package_path):
     """The default instrument is just always the demo instrument."""
-    return 'demo'
+    return 'tex2'
