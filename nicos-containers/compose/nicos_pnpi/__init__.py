@@ -18,7 +18,7 @@
 # 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 #
 # Module authors:
-#   Kiril Pshenichnyi <pshcyrill@mail.ru>
+#   Kirill Pshenichnyi <pshcyrill@mail.ru>
 #
 # *****************************************************************************
 
@@ -26,5 +26,5 @@
 
 
 def determine_instrument(setup_package_path):
-    """The default instrument is just always the demo instrument."""
+    """TEX-2 Texture difractometor instruement on PNPI"""
     return 'tex2'
