@@ -1,5 +1,5 @@
 #!/bin/bash
-TAG=pshcyrill/nicos:test
+TAG=pshcyrill/nicos:latest
 BIN=/usr/src/nicos/bin/nicos-gui
 #BIN=
 
