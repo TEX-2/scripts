@@ -9,9 +9,10 @@ services:
        volumes:
         - ./db-data/tango:/var/lib/mysql/tango
     tango-cs:
-       image: tangocs/tango-cs:9
+       image: ingvord/tango-cs-with-rest:1.14
        ports:
         - "10000:10000"
+        - "10001:10001"
        environment:
         - TANGO_HOST=localhost:10000
         - MYSQL_HOST=tango-db:3306
@@ -20,3 +21,7 @@ services:
         - MYSQL_DATABASE=tango
        depends_on:
         - tango-db
+    waltz:
+       image: tangocs/waltz:v0.7.3
+       ports:
+        - "8080:8080"
