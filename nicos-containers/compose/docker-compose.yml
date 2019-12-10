@@ -10,7 +10,7 @@ services:
         - ./log:/log
         - ./data:/data
        environment:
-        - INSTRUMENT=nicos_pnpi.demo
+        - INSTRUMENT=nicos_pnpi.tex2
 
     nicos-daemon:
        image: pshcyrill/nicos-daemon:latest
@@ -22,7 +22,7 @@ services:
         - ./log:/log
         - ./data:/data
        environment:
-        - INSTRUMENT=nicos_pnpi.demo
+        - INSTRUMENT=nicos_pnpi.tex2
 
     nicos-poller:
        image: pshcyrill/nicos-poller:latest
@@ -34,7 +34,7 @@ services:
         - ./log:/log
         - ./data:/data
        environment:
-        - INSTRUMENT=nicos_pnpi.demo
+        - INSTRUMENT=nicos_pnpi.tex2
 
     nicos-elog:
        image: pshcyrill/nicos-elog:latest
@@ -46,7 +46,7 @@ services:
         - ./log:/log
         - ./data:/data
        environment:
-        - INSTRUMENT=nicos_pnpi.demo
+        - INSTRUMENT=nicos_pnpi.tex2
 
     nicos-watchdog:
        image: pshcyrill/nicos-watchdog:latest
@@ -58,5 +58,5 @@ services:
         - ./log:/log
         - ./data:/data
        environment:
-        - INSTRUMENT=nicos_pnpi.demo
+        - INSTRUMENT=nicos_pnpi.tex2
        

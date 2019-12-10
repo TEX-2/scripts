@@ -12,7 +12,6 @@ RUN cd /usr/src/ && git clone https://forge.frm2.tum.de/review/frm2/nicos/nicos 
 
 RUN mkdir /usr/src/nicos/nicos_pnpi
 VOLUME /usr/src/nicos/nicos_pnpi
-ENV INSTRUMENT=nicos_pnpi.demo
 RUN mv /usr/src/nicos/data /data && ln -s /data /usr/src/nicos/data && ln -s /data /usr/src/nicos/bin/data  
 RUN mv /usr/src/nicos/log /log && ln -s /log /usr/src/nicos/log && ln -s /log /usr/src/nicos/bin/log
 VOLUME /data
