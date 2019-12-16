@@ -3,7 +3,7 @@
 # to container /source and /build (see buid_into_container.sh)
 
 
-TAG=tango-build
+TAG=pshcyrill/tango-cbuild
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 
 SOURCE=${DIR}/source

@@ -1,6 +1,6 @@
-FROM tangocs/tango-libs:latest
+FROM pshcyrill/tango-cbuild:latest
 
 MAINTAINER pshcyrill@mail.ru
 
-
-CMD /bin/bash
+COPY PhyMotionControl /usr/bin/PhyMotionControl
+CMD /usr/bin/PhyMotionControl phy_motion_control_instance
