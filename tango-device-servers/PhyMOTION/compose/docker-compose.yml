@@ -21,3 +21,12 @@ services:
        - TANGO_HOST=10.10.7.1:10000
       depends_on:
        - phymotioncontrol
+
+    axis:
+      image: pshcyrill/tango-axis
+      network_mode: host
+      environment:
+       - TANGO_HOST=10.10.7.1:10000
+      depends_on:
+       - phymotionmotor
+       
