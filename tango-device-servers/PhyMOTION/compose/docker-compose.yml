@@ -5,13 +5,19 @@ services:
       network_mode: host
       environment:
        - TANGO_HOST=10.10.7.1:10000
+
    phymotionmotor:
       image: pshcyrill/tango-phymotionmotor
       network_mode: host
       environment:
        - TANGO_HOST=10.10.7.1:10000
+      depends_on:
+       - phymotioncontrol
+
    phymotiondiom:
       image: pshcyrill/tango-phymotiondiom
       network_mode: host
       environment:
        - TANGO_HOST=10.10.7.1:10000
+      depends_on:
+       - phymotioncontrol
