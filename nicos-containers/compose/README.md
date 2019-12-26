@@ -1,8 +1,8 @@
 # compose
 
-1. git clone https://github.com/TEX-2/GUI
+1. git clone https://github.com/TEX-2/scripts
 
-2. cd GUI/nicos-containers/compose
+2. cd scripts/nicos-containers/compose
 
 В каталоге nicos_pnpi храняться файлы установок (в данный момент находится демонстарционная установка demo).
 
