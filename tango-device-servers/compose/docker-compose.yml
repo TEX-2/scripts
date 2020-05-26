@@ -26,3 +26,15 @@ services:
      - TANGO_HOST=10.10.7.1:10000
     depends_on:
      - phymotionmotor
+  mlzformatdigitalinput:
+    image: pshcyrill/tango-mlzformatdigitalinput
+    environment:
+     - TANGO_HOST=10.10.7.1:10000
+    depends_on:
+     - phymotiondiom
+  mlzformatdigitaloutput:
+    image: pshcyrill/tango-mlzformatdigitaloutput
+    environment:
+     - TANGO_HOST=10.10.7.1:10000
+    depends_on:
+     - phymotiondiom
