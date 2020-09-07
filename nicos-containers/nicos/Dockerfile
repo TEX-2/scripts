@@ -14,7 +14,7 @@ RUN mkdir /usr/src/nicos/nicos_pnpi
 VOLUME /usr/src/nicos/nicos_pnpi
 RUN mv /usr/src/nicos/data /data && ln -s /data /usr/src/nicos/data && ln -s /data /usr/src/nicos/bin/data  
 RUN mv /usr/src/nicos/log /log && ln -s /log /usr/src/nicos/log && ln -s /log /usr/src/nicos/bin/log
-RUN mkdir /configs && ls -s /usr/src/nicos/setup.py /configs/setup.py
+RUN mkdir /configs && mv /usr/src/nicos/setup.py /configs && ln -s /configs/setup.py /usr/src/nicos/setup.py
 VOLUME /data
 VOLUME /log
 VOLUME /configs
