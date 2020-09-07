@@ -9,6 +9,7 @@ services:
         - ./nicos_pnpi:/usr/src/nicos/nicos_pnpi
         - ./log:/log
         - ./data:/data
+	- ./configs:/configs
        environment:
         - INSTRUMENT=nicos_pnpi.tex2
 
